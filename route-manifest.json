@@ -1,0 +1,82 @@
+[
+  {
+    "id": "home",
+    "translationKey": "home",
+    "locale": "en-US",
+    "routeKind": "home",
+    "url": "/",
+    "alternates": {
+      "en-US": "/"
+    }
+  },
+  {
+    "id": "streamacheesepull-codes-rewards",
+    "translationKey": "streamacheesepull-codes-rewards",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/codes",
+    "alternates": {
+      "en-US": "/codes"
+    }
+  },
+  {
+    "id": "streamacheesepull-game-overview",
+    "translationKey": "streamacheesepull-game-overview",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/game",
+    "alternates": {
+      "en-US": "/game"
+    }
+  },
+  {
+    "id": "streamacheesepull-beginner-guide",
+    "translationKey": "streamacheesepull-beginner-guide",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/beginner",
+    "alternates": {
+      "en-US": "/guides/beginner"
+    }
+  },
+  {
+    "id": "streamacheesepull-rebirth-mystery-boxes",
+    "translationKey": "streamacheesepull-rebirth-mystery-boxes",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/rebirth",
+    "alternates": {
+      "en-US": "/guides/rebirth"
+    }
+  },
+  {
+    "id": "streamacheesepull-studio-expansion",
+    "translationKey": "streamacheesepull-studio-expansion",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/guides/studio-expansion",
+    "alternates": {
+      "en-US": "/guides/studio-expansion"
+    }
+  },
+  {
+    "id": "streamacheesepull-updates-events",
+    "translationKey": "streamacheesepull-updates-events",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/updates",
+    "alternates": {
+      "en-US": "/updates"
+    }
+  },
+  {
+    "id": "streamacheesepull-fan-wiki-safety",
+    "translationKey": "streamacheesepull-fan-wiki-safety",
+    "locale": "en-US",
+    "routeKind": "fixed",
+    "url": "/wiki-safety",
+    "alternates": {
+      "en-US": "/wiki-safety"
+    }
+  }
+]

@@ -31,6 +31,7 @@ import {
 } from "../src/lib/search";
 import type { AdConfig } from "../src/types/ads";
 import type { AssetManifest, AssetRecord } from "../src/types/assets";
+import type { PageContent } from "../src/types/content";
 import { guideModuleTypes } from "../src/types/modules";
 import {
   contentVariants,
@@ -529,7 +530,9 @@ for (const page of getAllPages()) {
   }
 }
 
-const heroFixturePage = getAllPages().find((page) => page.id === "guides");
+const heroFixturePage =
+  getAllPages().find((page) => page.id === "streamacheesepull-beginner-guide") ??
+  getAllPages().find((page) => page.pageType === "guide");
 if (!heroFixturePage) fail("guide fixture page is missing for review-date rendering validation");
 const pageHeroMarkup = renderToStaticMarkup(
   createElement(PageHero, { page: heroFixturePage }),
@@ -568,7 +571,8 @@ for (const locale of site.locales) {
 }
 
 const germanSearchFixture = {
-  ...getAllPages().find((page) => page.id === "guides")!,
+  ...(getAllPages().find((page) => page.id === "streamacheesepull-beginner-guide") ??
+    getAllPages().find((page) => page.pageType === "guide"))!,
   id: "fixture-guides-de",
   locale: "de-DE",
   slug: "de/guides",
@@ -594,33 +598,38 @@ if (
   fail("locale-aware static search did not isolate and query the German route");
 }
 
-const recentFixture = [
+const recentFixture: PageContent[] = [
   {
-    ...getAllPages().find((page) => page.id === "guides")!,
+    ...(getAllPages().find((page) => page.id === "streamacheesepull-beginner-guide") ??
+      getAllPages().find((page) => page.pageType === "guide"))!,
     id: "recent-z",
     slug: "z",
     url: "/z",
     lastReviewed: "2026-08-01",
   },
   {
-    ...getAllPages().find((page) => page.id === "wiki")!,
+    ...(getAllPages().find((page) => page.id === "streamacheesepull-game-overview") ??
+      getAllPages().find((page) => page.pageType === "explanation"))!,
     id: "recent-a",
     slug: "a",
     url: "/a",
-    lastReviewed: "2026-08-01",
   },
   {
-    ...getAllPages().find((page) => page.id === "about")!,
+    ...(getAllPages().find((page) => page.id === "streamacheesepull-fan-wiki-safety") ??
+      getAllPages().find((page) => page.pageType === "reference"))!,
     id: "recent-trust",
     slug: "trust",
     url: "/trust",
+    pageType: "site",
     lastReviewed: "2026-09-01",
   },
   {
-    ...getAllPages().find((page) => page.id === "faq")!,
+    ...(getAllPages().find((page) => page.id === "streamacheesepull-codes-rewards") ??
+      getAllPages().find((page) => page.pageType === "status"))!,
     id: "recent-faq",
     slug: "faq-copy",
     url: "/faq-copy",
+    pageType: "faq",
     lastReviewed: "2026-09-03",
   },
   {
