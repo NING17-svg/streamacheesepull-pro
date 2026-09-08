@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-08 - Adsterra six-unit integration (adsterra-integrator)
+
+- Task: Replace the six empty Adsterra placeholders (native-banner, banner-728x90, banner-468x60, banner-320x50, banner-160x600, smartlink) in src/data/ads.ts with the real placement codes collected from the Adsterra publishers dashboard for streamacheesepull.pro.
+- Files changed: src/data/ads.ts only.
+- URLs affected: none (no template, routing or component changes; ad slots remain fixed).
+- SEO/GEO changed: none.
+- Verification: site verify (typecheck + lint + template/content/SEO/route-manifest validators) must remain green; no live ad requests or layout changes are validated by this role.
+- Follow-up: none; registry writeback to status=enabled will be performed by the adsterra-integrator role after this commit lands.
+
 ### 2026-08-12 - Static discovery and review freshness baseline added
 
 - Task: Add locale-aware static search, automatic recent updates, visible review dates, and browser metadata/security defaults to the shared template.
