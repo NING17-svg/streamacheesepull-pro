@@ -293,6 +293,100 @@ export const faqItems: FAQItem[] = [
     sourceStatus: "official",
   },
 
+  // First-session cash page FAQs
+  {
+    id: "first-session-cash-priority",
+    question: "What is the first-session desk priority order in Stream A Cheese Pull?",
+    answer:
+      "Redeem FirstCodeEver in the in-game Store for a free Blue Cheese Crate (always a Rare-tier desk), claim the like-and-join Cheesy Situation group bonus, buy your 2nd desk, buy your 3rd desk, then hire your first helper. The order comes from the fan-built wiki /guides/how-to-earn-cash-fast and is treated as the best available community consensus.",
+    pageIds: ["streamacheesepull-first-session-cash"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "why-desk-rarity-matters",
+    question: "Why does desk rarity matter in Stream A Cheese Pull?",
+    answer:
+      "Desks are paid by rarity tier, and rarity is the primary driver of cash income. A single Rare desk can out-earn several starter desks combined, which is why the FirstCodeEver Blue Cheese Crate (which always grants a Rare desk) is the fastest route to a Rare desk and the biggest single cash jump available to a new player.",
+    pageIds: ["streamacheesepull-first-session-cash"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "firstcodeever-first-desk",
+    question: "Is FirstCodeEver the same as my first desk?",
+    answer:
+      "Yes. Treat the FirstCodeEver Blue Cheese Crate as your first desk slot rather than a separate reward. The Crate always grants a Rare-tier desk, which functions as the first paid slot in your studio without spending any cash you earned from streaming.",
+    pageIds: ["streamacheesepull-first-session-cash", "streamacheesepull-codes-rewards"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "when-hire-first-helper",
+    question: "When should I hire my first helper in Stream A Cheese Pull?",
+    answer:
+      "Hire your first helper after the third desk is paid for, and place the helper directly beside the desk you want it to support. A helper in a doorway or against a wall does not contribute to that desk's cash engine. The active code SPEEDIE unlocks one Fast Worker if you want a head start.",
+    pageIds: ["streamacheesepull-first-session-cash"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "first-session-common-mistakes",
+    question: "What are the most common first-session cash mistakes?",
+    answer:
+      "Skipping the in-game tutorial, leaving the starter desk unclaimed, forgetting to redeem FirstCodeEver, buying decorations before income upgrades, ignoring the like-and-join group rewards, and chasing any auto-stream script or pastebin. The scripts risk a permanent Roblox ban and are not endorsed by Cheesy Situation as of 2026-09-07.",
+    pageIds: ["streamacheesepull-first-session-cash"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
+  // Studio expansion page FAQs (Task 2 additions)
+  {
+    id: "worker-placement-beside-desks",
+    question: "Where do I place workers beside desks in Stream A Cheese Pull?",
+    answer:
+      "Place each worker directly beside the desk you want it to support, and leave gaps between streaming stations so each new desk has a clear adjacent slot. A worker placed in a doorway or against a wall does not contribute to that desk's cash engine, so the rule is hire the helper after the third desk is paid for, then park it beside a desk.",
+    pageIds: ["streamacheesepull-studio-expansion"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "cheapest-room-first-rule",
+    question: "What is the cheapest-room-first rule for studio expansion?",
+    answer:
+      "Always buy the cheapest wall expansion first and keep a cash buffer for whatever the expansion reveals. Floor space before furniture, so desks always fit. The rule comes from the fan-built wiki /progression/studio-expansion and is consistent with the official expand-your-business phase of the four-step core loop.",
+    pageIds: ["streamacheesepull-studio-expansion"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "backrooms-decor-rebrand",
+    question: "Can I use the BACKROOMS decor set without rebuilding my studio?",
+    answer:
+      "Yes. The BACKROOMS decor set (fluorescent ceiling tubes, yellow-wall doorways to nowhere, wall-mounted security cameras, plus ghostly accents and masked figures) sits on the decoration layer, so it integrates with the existing room-by-room priority order without forcing a rebuild. Apply it after the third desk and the first helper are in place, on top of a room that is already earning. The exact item catalog has not been developer-confirmed as of 2026-09-07.",
+    pageIds: ["streamacheesepull-studio-expansion"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+  {
+    id: "update-5-cash-buffer",
+    question: "Should I keep a cash buffer for Update 5?",
+    answer:
+      "If a cash-heavy Update 5 lands while you are mid-build, keep a healthy cash buffer so you can claim the cheapest expansion and any new income station the patch reveals. The fan wiki /updates/update-5-new-zone recommends stockpiling cash, redeeming every active code (including FirstCodeEver), and clearing floor space before the patch. Verify the developer-confirmed patch copy on the /updates page before committing the buffer.",
+    pageIds: ["streamacheesepull-studio-expansion", "streamacheesepull-updates-events"],
+    category: "gameplay",
+    schemaEligible: true,
+    sourceStatus: "official",
+  },
+
   // Updates page FAQs
   {
     id: "when-last-update",

@@ -162,6 +162,7 @@ export const fixedPages: PageContent[] = [
       ctas: [
         { label: "Game overview", href: "/game" },
         { label: "Beginner guide", href: "/guides/beginner" },
+        { label: "First-session cash", href: "/guides/first-session-cash" },
         { label: "Updates", href: "/updates" },
       ],
     },
@@ -272,6 +273,7 @@ export const fixedPages: PageContent[] = [
       subtitle:
         "Tutorial, active code, like-and-group bonus, and the four-step core loop.",
       ctas: [
+        { label: "First-session cash", href: "/guides/first-session-cash" },
         { label: "Active codes", href: "/codes" },
         { label: "Rebirth & mystery boxes", href: "/guides/rebirth" },
         { label: "Source safety", href: "/wiki-safety" },
@@ -337,6 +339,7 @@ export const fixedPages: PageContent[] = [
       "streamacheesepull-studio-expansion",
       "streamacheesepull-fan-wiki-safety",
       "streamacheesepull-game-overview",
+      "streamacheesepull-first-session-cash",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",
@@ -509,6 +512,26 @@ export const fixedPages: PageContent[] = [
           "Decoration slots open up as you buy the cheapest studio expansion. Each slot is cosmetic, but the slots also act as visual milestones. The official description lists decorate your setup as a real phase of the loop, so the slots are a confirmed part of the studio layout. The fan wiki references cheese crates in this layer; the term is community vocabulary, not a developer object name, as of 2026-09-07.",
       },
       {
+        id: "worker-placement",
+        type: "prose",
+        heading: "Worker placement beside desks",
+        body:
+          "Helpers do not pay for empty tile space; they pay when they are parked next to a desk that is actively streaming. The fan-built wiki /progression/studio-expansion recommends leaving gaps between streaming stations so each new desk has a clear adjacent slot, then clustering workers near their desks so parallel streams read as one busy set on camera. A worker placed in a doorway or against a wall does not contribute to that desk's cash engine, so the rule is simple: hire the helper after the third desk is paid for, and place the helper directly beside the desk you want it to support. If you add a second helper, place it beside the highest-earning desk in the room, not the newest one.",
+      },
+      {
+        id: "room-by-room-priority",
+        type: "steps",
+        heading: "Room-by-room priority order",
+        items: [
+          { title: "Bank cash first", body: "Run desks nonstop and cash out often so you enter each room purchase with a healthy cash buffer." },
+          { title: "Buy the cheapest wall expansion first", body: "Purchase the cheapest room first, keeping a cash buffer for whatever the expansion reveals. Floor space before furniture, so desks always fit." },
+          { title: "Place desks before decor", body: "Once the new room opens, fill it with desks and a helper before buying any wall theme or event decor. Income first, cosmetics second." },
+          { title: "Hire a helper when a free desk slot exists", body: "Only hire once a desk is in place and ready to stream. An idle helper earns nothing." },
+          { title: "Theme the set after income upgrades stop feeling urgent", body: "Wall themes and event decor are medium- and low-priority. Add them only when the next cash-per-second upgrade is no longer urgent." },
+          { title: "Repeat and rebalance", body: "Open the next cheapest room, fill it with desks, then rebalance worker placement so the highest-earning desks have adjacent helpers." },
+        ],
+      },
+      {
         id: "upgrade-priority",
         type: "steps",
         heading: "Upgrade priority checklist",
@@ -528,6 +551,21 @@ export const fixedPages: PageContent[] = [
           "Decoration is the part of the studio where community vocabulary is most active. The fan wiki uses cheese wheel and cheese crates to label objects on the studio floor, and it references a BACKROOMS event as a late-game addition. None of these terms are on the official Roblox page as of 2026-09-07. Use the wiki terms as conversation shorthand with other players, but verify the actual object names against the active code list and the in-game Store copy. The only developer-confirmed object name in the same visual layer is the Blue Cheese Crate that FirstCodeEver grants.",
       },
       {
+        id: "backrooms-decor",
+        type: "prose",
+        heading: "BACKROOMS decor as a rebrand, not a rebuild",
+        body:
+          "The BACKROOMS-themed decor set is the cheapest rebrand the fan wiki describes for Stream A Cheese Pull!: named pieces include fluorescent ceiling tubes, yellow-wall doorways to nowhere, and wall-mounted security cameras, plus ghostly accents and masked figures that lean into liminal horror. Because they sit on the decoration layer, they integrate with the existing room-by-room priority order without forcing a rebuild. Apply the BACKROOMS set after the third desk and the first helper are in place, on top of a room that is already earning, so the rebrand does not delay the next cash-per-second upgrade. The exact BACKROOMS item catalog has not been developer-confirmed as of 2026-09-07; treat the named pieces as community-reported inspiration and confirm against the in-game Store once the event is live.",
+      },
+      {
+        id: "update-5-cash-buffer",
+        type: "callout",
+        tone: "tip",
+        title: "Update 5 cash-buffer note",
+        body:
+          "If a cash-heavy Update 5 lands while you are mid-build, keep a healthy cash buffer so you can claim the cheapest expansion and any new income station the patch reveals. The fan wiki /updates/update-5-new-zone recommends stockpiling cash, redeeming every active code (including FirstCodeEver), and clearing floor space before the patch so new desks and event freebies actually fit. Verify the developer-confirmed patch copy on the /updates page before committing a buffer to any unreleased upgrade.",
+      },
+      {
         id: "verify-next-patch",
         type: "prose",
         heading: "Verify the next patch before you commit",
@@ -542,12 +580,115 @@ export const fixedPages: PageContent[] = [
       "is-backrooms-event-confirmed",
       "how-to-know-new-tier",
       "does-expansion-cost-robux",
+      "worker-placement-beside-desks",
+      "cheapest-room-first-rule",
+      "backrooms-decor-rebrand",
+      "update-5-cash-buffer",
     ],
     relatedPageIds: [
       "streamacheesepull-beginner-guide",
       "streamacheesepull-rebirth-mystery-boxes",
       "streamacheesepull-updates-events",
       "streamacheesepull-codes-rewards",
+      "streamacheesepull-first-session-cash",
+    ],
+    schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
+    sourceStatus: "official",
+    lastReviewed: "2026-09-07",
+  },
+
+  // /guides/first-session-cash/ — first-session cash strategy and desk priority order
+  {
+    id: "streamacheesepull-first-session-cash",
+    translationKey: "streamacheesepull-first-session-cash",
+    locale: "en-US",
+    routeKind: "fixed",
+    slug: "guides/first-session-cash",
+    url: "/guides/first-session-cash",
+    pageType: "guide",
+    presentation: contentShell(),
+    h1: "Stream A Cheese Pull First-Session Cash: Desk Priority Order",
+    seoTitle: "Stream A Cheese Pull First-Session Cash and Desk Priority Guide",
+    metaDescription:
+      "Plan your Stream A Cheese Pull first session with a concrete desk priority order: FirstCodeEver Crate first, then 2nd/3rd desk, then the first helper, with desk rarity explained.",
+    summary:
+      "A first-session cash strategy for Stream A Cheese Pull!: desk priority order, why rarity matters, and how the FirstCodeEver reward stacks with the like-and-join bonus.",
+    hero: {
+      eyebrow: "First-session cash",
+      subtitle:
+        "Desk priority order (FirstCodeEver Crate → 2nd/3rd desk → first helper) and why rarity matters.",
+      ctas: [
+        { label: "Active codes", href: "/codes" },
+        { label: "Beginner guide", href: "/guides/beginner" },
+        { label: "Studio expansion", href: "/guides/studio-expansion" },
+      ],
+    },
+    quickAnswer:
+      "On your first session in Stream A Cheese Pull!, redeem the FirstCodeEver code in the in-game Store for a free Blue Cheese Crate, claim the like-and-join Cheesy Situation group bonus, then buy the cheapest 2nd and 3rd desks before hiring your first helper. Desk rarity matters because a single Rare desk (which is what the FirstCodeEver Crate grants) can out-earn several starter desks combined, so stacking high-rarity stations is the fastest path to the next cash-per-second tier and the first studio expansion.",
+    keyFacts: [
+      { label: "First move", value: "Redeem FirstCodeEver in the in-game Store (free Blue Cheese Crate)" },
+      { label: "Stack early", value: "Buy 2nd desk, then 3rd desk, before any cosmetic purchase" },
+      { label: "First hire", value: "Hire your first helper after the third desk is paid for" },
+      { label: "Free bonus", value: "Like the game + join Cheesy Situation group (~5 sec, in-game currency)" },
+      { label: "Why rarity matters", value: "A single Rare desk can out-earn several starter desks combined" },
+      { label: "Source tier", value: "Fan-built wiki /guides/how-to-earn-cash-fast (community, dated 2026-09-07)" },
+    ],
+    modules: [
+      {
+        id: "first-session-priority",
+        type: "steps",
+        heading: "First-session desk priority order",
+        items: [
+          { title: "Redeem FirstCodeEver for the Blue Cheese Crate", body: "Open the in-game Store, paste FirstCodeEver into the redemption box, and the Blue Cheese Crate lands in your inventory. The Crate always contains a Rare-tier desk, which the fan-built wiki describes as generating tens of thousands of cash per second. Treat this as your first desk slot rather than a separate reward.", doneCondition: "Rare desk in studio from the FirstCodeEver Crate" },
+          { title: "Claim the like-and-join bonus", body: "Like the Stream A Cheese Pull! game page on Roblox and join the Cheesy Situation group (id 1013100488). Both rewards pay out in-game currency in roughly five seconds and are the only confirmed free income outside the active code list.", doneCondition: "Like icon active and group membership active" },
+          { title: "Buy your 2nd desk, then your 3rd desk", body: "Stack cheap income desks before anything else. The fan-built wiki /guides/how-to-earn-cash-fast recommends a 2nd and 3rd desk as the first studio expenses because each desk pays cash per second around the clock, including while you are idle.", doneCondition: "Studio holds at least three paid desks" },
+          { title: "Hire your first helper", body: "After the third desk is paid for, hire your first helper (the active code SPEEDIE unlocks one Fast Worker if you want a head start). Helpers keep streams running passively, so cash income no longer stops when you step away.", doneCondition: "Helper hired and assigned beside a desk" },
+          { title: "Save the rest for studio expansion", body: "Decoration is cosmetic and does not move the studio forward on its own. Save any leftover cash for the cheapest studio expansion tier covered on /guides/studio-expansion.", doneCondition: "Cheapest expansion tier purchased" },
+        ],
+      },
+      {
+        id: "why-rarity-matters",
+        type: "prose",
+        heading: "Why desk rarity matters more than quantity",
+        body:
+          "Stream A Cheese Pull! desks are paid by rarity tier, and rarity is the primary driver of cash income. The fan-built wiki /guides/how-to-earn-cash-fast highlights that a single Rare desk out-earns several starter stations combined, which is why the FirstCodeEver Blue Cheese Crate is described as the fastest route to a Rare desk and the easiest Rare desk source in the entire game. The Crate always contains a Rare-tier desk, so redeeming FirstCodeEver is functionally the same as buying one Rare desk for free. Stacking multiple Common desks in parallel closes part of the gap, but a Rare or higher tier pays a step-change per-second income that Common stacks cannot match, which is why the priority order puts the Crate first and the 2nd and 3rd desks second.",
+      },
+      {
+        id: "firstcodeever-and-bonus-combo",
+        type: "prose",
+        heading: "How the FirstCodeEver reward stacks with the like-and-join bonus",
+        body:
+          "The fastest legitimate first-session income comes from stacking the two confirmed free bonuses. FirstCodeEver grants a free Rare desk via the Blue Cheese Crate, which the fan-built wiki treats as the biggest single cash jump available to a new player. The like-and-join bonus (heart the game page, join the Cheesy Situation group) pays out in-game currency in roughly five seconds and is the only other confirmed free income path. Together they fund the 2nd and 3rd desk without touching the cash you earn from streaming, so the first-session strategy is: Crate first, like-and-join second, then stack desks, then hire the first helper. Avoid spending cash on decor before the third desk is in place; the fan-built wiki flags buying decorations before income upgrades as the most common first-session mistake.",
+      },
+      {
+        id: "common-mistakes",
+        type: "callout",
+        tone: "caution",
+        title: "Common first-session mistakes to avoid",
+        body:
+          "The fan-built wiki /guides/how-to-earn-cash-fast lists six frequent first-session errors: skipping the in-game tutorial (forfeits free rewards), leaving the starter desk unclaimed, forgetting to redeem FirstCodeEver, buying decorations before income upgrades, ignoring the like-and-join group rewards, and chasing any auto-stream script, paste, or executor (which risks a permanent Roblox ban). None of the auto-stream scripts, pastebins, or free Robux generators are affiliated with Cheesy Situation, and the developer has not endorsed one as of 2026-09-07.",
+      },
+      {
+        id: "source-flags",
+        type: "callout",
+        tone: "unknown",
+        title: "Source tier for this priority order",
+        body:
+          "The desk priority order on this page is sourced from the fan-built companion wiki /guides/how-to-earn-cash-fast, which is community-maintained and dated 2026-09-07. Cheesy Situation has not published a developer-confirmed desk priority list on the official Roblox game page or the Cheesy Situation group page. Treat the order as the best available community consensus, and verify the Crate reward wording against the official /codes page and the FirstCodeEver entry on the active code list. The like-and-join bonus, the FirstCodeEver code itself, and the in-game Store redemption surface are developer-confirmed and not affected by the wiki tier.",
+      },
+    ],
+    faqIds: [
+      "first-session-cash-priority",
+      "why-desk-rarity-matters",
+      "firstcodeever-first-desk",
+      "when-hire-first-helper",
+      "first-session-common-mistakes",
+    ],
+    relatedPageIds: [
+      "streamacheesepull-codes-rewards",
+      "streamacheesepull-beginner-guide",
+      "streamacheesepull-studio-expansion",
+      "streamacheesepull-game-overview",
     ],
     schemaTypes: ["Article", "BreadcrumbList", "FAQPage"],
     sourceStatus: "official",

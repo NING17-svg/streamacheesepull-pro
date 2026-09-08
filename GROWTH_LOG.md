@@ -6,6 +6,15 @@ Record every growth-relevant edit here. Keep entries short, factual, and useful 
 
 ## Change Log
 
+### 2026-09-09 - First-session cash and studio-expansion detail (content-updater)
+
+- Task: Add a dedicated first-session cash strategy and desk priority page at /guides/first-session-cash, and extend /guides/studio-expansion with a worker-placement section, a room-by-room priority order, a BACKROOMS decor integration paragraph, and a brief Update 5 cash-buffer note with an internal link to /updates.
+- Files changed: src/data/pages/fixed-pages.ts (new first-session-cash entry, four new modules on studio-expansion, updated CTAs/relatedPageIds on beginner and codes pages); src/data/faq.ts (nine new FAQ items); src/data/navigation.ts (new primary and footer entries for first-session-cash and studio-expansion); CONTENT_INDEX.md (full inventory refresh, new content clusters and internal linking map); GROWTH_LOG.md (this entry).
+- URLs affected: added /guides/first-session-cash; existing /guides/studio-expansion, /guides/beginner, /codes, /updates, and home navigation updated with new related links.
+- SEO/GEO changed: New H1 and metadata for /guides/first-session-cash; studio-expansion H1 unchanged but expanded prose and module surface (worker placement, room-by-room priority, BACKROOMS decor, Update 5 cash buffer).
+- Source tier: New desk priority order is sourced from the fan-built wiki /guides/how-to-earn-cash-fast; worker placement, room-by-room priority, BACKROOMS decor, and Update 5 cash-buffer content are sourced from the fan-built wiki /progression/studio-expansion, /updates/secret-update-backrooms, and /updates/update-5-new-zone. Developer-confirmed facts (FirstCodeEver code, Blue Cheese Crate, like-and-join bonus, in-game Store path) are unchanged.
+- Verification: npm run verify (typecheck + lint + template/content/SEO validators + build) must remain green.
+
 ### 2026-09-08 - Adsterra six-unit integration (adsterra-integrator)
 
 - Task: Replace the six empty Adsterra placeholders (native-banner, banner-728x90, banner-468x60, banner-320x50, banner-160x600, smartlink) in src/data/ads.ts with the real placement codes collected from the Adsterra publishers dashboard for streamacheesepull.pro.
